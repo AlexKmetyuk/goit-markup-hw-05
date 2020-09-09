@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/styles.css" />
@@ -64,7 +64,9 @@
           для вашего бизнеса
         </h1>
 
-        <a href="" class="button link">Заказать услугу</a>
+        <button data-modal-open class="button">
+          Заказать услугу
+        </button>
       </div>
     </section>
 
@@ -301,7 +303,6 @@
     </section>
 
     <!--Постоянные клиенты-->
-
     <section class="our-clients">
       <div class="conteiner">
         <h2 class="title">Постоянные клиенты</h2>
@@ -413,5 +414,11 @@
         </div>
       </div>
     </footer>
+    <div data-modal data-modal-close class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>&#10006</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
