@@ -240,8 +240,8 @@ header {
 
 .features {
   display: flex;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .features .item:not(:last-child) {
@@ -249,7 +249,7 @@ header {
 }
 
 .features .title {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -328,8 +328,7 @@ header {
   position: relative;
 }
 
-.doing .item:nth-child(1)::after {
-  content: 'ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ';
+.doing .item::after {
   position: absolute;
   height: 70px;
   bottom: 4px;
@@ -347,48 +346,18 @@ header {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
+}
+
+.doing .item:nth-child(1)::after {
+  content: 'ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ';
 }
 
 .doing .item:nth-child(2)::after {
   content: 'МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ';
-  position: absolute;
-  height: 70px;
-  bottom: 4px;
-  right: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: rgba(47, 48, 58, 0.8);
-  color: var(--white);
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
 }
 
 .doing .item:nth-child(3)::after {
   content: 'ДИЗАЙНЕРСКИЕ РЕШЕНИЯ';
-  position: absolute;
-  height: 70px;
-  bottom: 4px;
-  right: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: rgba(47, 48, 58, 0.8);
-  color: var(--white);
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
 }
 
 /* -----Наша команда----- */
